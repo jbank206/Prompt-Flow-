@@ -13,3 +13,7 @@ A lightweight, conversion-focused frontend built with **Vite**, **TypeScript**, 
 ```bash
 npm install
 npm run dev
+
+## 📑 Terms of Use
+
+Use of this software is subject to the [Terms of Use](TERMS.md). Unauthorized commercial use is prohibited.
