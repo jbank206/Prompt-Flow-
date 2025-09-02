@@ -17,3 +17,9 @@ npm run dev
 ## 📑 Terms of Use
 
 Use of this software is subject to the [Terms of Use](TERMS.md). Unauthorized commercial use is prohibited.
+
+## 🧾 License
+
+This project is proprietary software. All rights reserved © 2025 Joshua Banks.
+
+Use of this software is subject to the [LICENSE](LICENSE) and [Terms of Use](TERMS.md). Unauthorized commercial use is prohibited.
