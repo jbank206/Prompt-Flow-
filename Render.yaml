@@ -1,0 +1,31 @@
+databases:
+  - name: prompt-flow-db
+    databaseName: prompt_flow
+    user: prompt_flow_user
+
+services:
+  - type: web
+    name: prompt-flow-app
+    runtime: node
+    env: node
+    plan: free
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: prompt-flow-db
+          property: connectionString
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: VITE_STRIPE_PUBLIC_KEY
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true
+      - key: PORT
+        value: 10000
